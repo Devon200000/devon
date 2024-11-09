@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-F
+
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
@@ -45,9 +45,9 @@ F
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/devon-ike-hicalde-838b3130a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.behance.net/devonikehicalde20" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    
                 </div>
 
                 <div class="home__img">
@@ -74,24 +74,15 @@ F
                     
                     <div>
                         <h2 class="about__subtitle">I'am Devon Ike</h2>
-                        <p class="about__text">As a Graphic Designer, Video Editor, 3D Designer, Front-end designer, and Social Media Editor, my skills span a wide range of creative and technical disciplines, allowing me to bring a unique and comprehensive approach to every project I undertake I as a graphic designer in my job I can easily adapt. Quick decision for solutions and I have a developer team making Queuing Development, Customer Feedback, Interactive Digital Signage, and Paging System we making app. We introduce our project and I inlighten their work using any Graphic Design.
-Graphic Designer
-Skill Set: Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign), typography, branding, and layout design.
-Goal: To create visually compelling designs that communicate the intended message effectively and leave a lasting impression.
-Video Editor
-Skill Set: Expertise in Adobe Premiere Pro, Final Cut Pro, After Effects, color grading, and sound editing.
-Goal: To craft engaging and seamless video content that captures the viewer's attention and conveys the story in a dynamic and impactful way.
-3D Designer
-Skill Set: Proficient in software such as Blender, Cinema 4D, and Autodesk Maya, specializing in modeling, texturing, rigging, and animation.
-Goal: To create realistic and imaginative 3D visuals and animations that enhance the storytelling and visual experience.
-Social Media Editor
-Skill Set: Skilled in content creation, social media strategy, analytics, and platforms like Instagram, Facebook, Twitter, and LinkedIn.
-Goal: To develop and implement engaging social media campaigns that drive brand awareness, engagement, and growth.
-Professional Identity
-Known For: Creativity, attention to detail, and a strong understanding of visual storytelling across various media.
-Work Ethic: Committed to delivering high-quality work on time, collaborating effectively with clients and team members, and continuously learning to stay ahead of industry trends.
-Vision: To be recognized as a versatile and innovative professional who brings a fresh perspective to every project, consistently exceeding expectations and pushing creative boundaries.
-By blending these skills, I aim to deliver comprehensive and cohesive visual solutions that resonate with audiences and elevate brand presence across all platforms.</p>           
+                        <p class="about__text">I am a versatile creative professional with expertise in graphic design, video editing, 3D design, front-end design, and social media editing. My broad skill set allows me to bring a unique, well-rounded approach to each project. As a graphic designer, I adapt quickly to deliver solutions and collaborate with my development team to enhance projects like queuing systems, customer feedback, digital signage, and paging systems through impactful visuals.
+
+                            Core Skills:
+                            
+                            Graphic Design: Proficient in Adobe Creative Suite, typography, branding, and layout.
+                            Video Editing: Skilled in Adobe Premiere Pro, Final Cut Pro, and After Effects for crafting dynamic, engaging videos.
+                            3D Design: Experienced in Blender, Cinema 4D, and Autodesk Maya for creating realistic, immersive 3D visuals.
+                            Social Media: Strategically skilled in content creation, analytics, and platform management to drive brand engagement and growth.
+                            Professional Identity: Known for creativity, attention to detail, and a commitment to delivering high-quality work on time. I strive to bring innovative solutions, exceed expectations, and push creative boundaries, providing cohesive visuals that strengthen brand presence across platforms.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -99,13 +90,15 @@ By blending these skills, I aim to deliver comprehensive and cohesive visual sol
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
+                <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">A description for MY professional skills, a bit more information about my background and the specific skills i have.</p>
             
                 <div class="skills__container bd-grid">
                     <div class="skills__wrapper">
                         <!-- First Column -->
+                        
                         <div class="skills__column">
-                            <h2 class="skills__subtitle">Professional Skills</h2>
-                            <p class="skills__text">A description for MY professional skills, a bit more information about my background and the specific skills i have.</p>
+                           
                             <div class="skills__data">
                                 <div class="skills__names">
                                     <i class='bx bxl-html5 skills__icon'></i>
@@ -159,7 +152,7 @@ By blending these skills, I aim to deliver comprehensive and cohesive visual sol
                         </div>
             
                         <!-- Second Column -->
-                        <div class="skills__column">
+                        <div class="skills__column1">
                             <div class="skills__data">
                                 <div class="skills__names">
                                     <i class='bx bxs-paint skills__icon'></i>
@@ -213,13 +206,7 @@ By blending these skills, I aim to deliver comprehensive and cohesive visual sol
                         </div>
                     </div>
                 </div>
-            </section>
-            
-                                                                           
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
+           
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
@@ -252,11 +239,17 @@ By blending these skills, I aim to deliver comprehensive and cohesive visual sol
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="./send_email.php" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </section>
@@ -279,5 +272,26 @@ By blending these skills, I aim to deliver comprehensive and cohesive visual sol
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <style>
+           .skills__wrapper {
+    display: flex;
+    justify-content: space-between; /* Adds space between the two columns */
+    gap: 2rem; /* Optional: Adjusts the gap between the columns */
+}
+
+.skills__column{
+    flex: 1; /* Ensures both columns take equal width */
+    padding: 1rem; /* Optional: Adds padding inside each column */
+    width: 100vh;
+}
+.skills__column1 {
+    flex: 1; /* Ensures both columns take equal width */
+    padding: 1rem; /* Optional: Adds padding inside each column */
+
+}
+
+        </style>
     </body>
 </html>
+
