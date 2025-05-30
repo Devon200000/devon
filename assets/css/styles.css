@@ -6,7 +6,7 @@
   --font-semi: 600;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
+    /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
@@ -337,7 +337,7 @@ img {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  font-size: 100px;
+  font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
   z-index: 10;
