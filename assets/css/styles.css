@@ -259,9 +259,11 @@ img {
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  margin-left: 14%;
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  margin-left: 14%;
 }
 .skills__data {
   display: flex;
